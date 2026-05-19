@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Natural XScentrics</title>
+    <meta
+      name="description"
+      content="Schedule signature Natural XScentrics services including facials and exfoliation treatments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="services">
+    <div class="site-bg"></div>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html" aria-label="Natural XScentrics home">
+          <img src="./assets/logo.png" alt="Natural XScentrics logo" />
+          <span><strong>Natural XScentrics</strong><small>Reset. Renew. Radiate.</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a data-nav="home" href="./index.html">Home</a>
+          <a data-nav="about" href="./about.html">About</a>
+          <a data-nav="services" href="./services.html">Services</a>
+          <a data-nav="shop" href="./shop.html">Shop</a>
+          <a data-nav="wellness" href="./wellness.html">Wellness</a>
+          <a data-nav="media" href="./media.html">Media</a>
+          <a data-nav="gift-cards" href="./gift-cards.html">Gift Cards</a>
+          <a data-nav="digital-products" href="./digital-products.html">Digital</a>
+          <a data-nav="merchandise" href="./merchandise.html">Merch</a>
+          <a class="nav-cta" data-nav="contact" href="./contact.html">Book & Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="content-panel">
+            <p class="eyebrow">Schedule services</p>
+            <h1>Book treatments that extend the Natural XScentrics care experience beyond the jar.</h1>
+            <p class="page-intro">
+              This page is structured for direct service booking and can connect to
+              Calendly, Acuity, Wix Bookings, Shopify appointments, or your preferred system.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="#book-now">Request an appointment</a>
+              <a class="button button-secondary" href="./contact.html">Ask about private events</a>
+            </div>
+          </div>
+          <div class="page-visual">
+            <div class="page-gloss"></div>
+            <img src="./assets/founder-studio.jpg" alt="Founder portrait for service experience page" />
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Signature services</p>
+            <h2>Clear service cards make pricing and booking more approachable.</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="pricing-label tag-lime">Best Seller</span>
+              <h3>NXS Facial Treatment</h3>
+              <span class="price">$35+</span>
+              <p>
+                A 45-minute service focused on refreshing skin, supporting glow,
+                and reinforcing a healthy routine through natural care.
+              </p>
+            </article>
+            <article class="service-card">
+              <span class="pricing-label tag-orange">30 Minutes</span>
+              <h3>Foot Massage &amp; Exfoliation</h3>
+              <span class="price">$20+</span>
+              <p>Designed to soften, smooth, and revive tired feet while creating a moment of reset.</p>
+            </article>
+            <article class="service-card">
+              <span class="pricing-label tag-blue">Quick Care</span>
+              <h3>Hand Massage &amp; Exfoliation</h3>
+              <span class="price">$10+</span>
+              <p>A shorter service ideal for events, pop-ups, and self-care add-ons with immediate feel-good impact.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section schedule-layout" id="book-now">
+          <div class="schedule-panel">
+            <p class="eyebrow">Appointment request</p>
+            <h2>Booking-ready intake form</h2>
+            <form data-demo-form>
+              <div class="form-grid">
+                <label>
+                  Full name
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@example.com" required />
+                </label>
+                <label>
+                  Preferred service
+                  <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option>NXS Facial Treatment</option>
+                    <option>Foot Massage & Exfoliation</option>
+                    <option>Hand Massage & Exfoliation</option>
+                  </select>
+                </label>
+                <label>
+                  Preferred date
+                  <input type="date" name="date" required />
+                </label>
+                <label>
+                  Preferred time
+                  <input type="time" name="time" required />
+                </label>
+                <label>
+                  Booking type
+                  <select name="type">
+                    <option>In-studio</option>
+                    <option>Event inquiry</option>
+                    <option>Pop-up request</option>
+                  </select>
+                </label>
+                <label class="full">
+                  Notes
+                  <textarea name="notes" placeholder="Share goals, skin concerns, or event details"></textarea>
+                </label>
+              </div>
+              <div class="cta-row">
+                <button class="button button-primary" type="submit">Submit request</button>
+              </div>
+            </form>
+            <div class="success-message">
+              Appointment request captured in this prototype. Connect this form to your booking platform or inbox for live scheduling.
+            </div>
+          </div>
+
+          <div class="stack">
+            <article class="detail-card">
+              <p class="eyebrow">Integration options</p>
+              <h3>Recommended live setup</h3>
+              <ul class="card-list">
+                <li>Acuity or Calendly for direct appointment slots and reminders</li>
+                <li>Wix Bookings if you stay on Wix and want simple service management</li>
+                <li>Shopify app integrations if bookings and products live together</li>
+              </ul>
+            </article>
+            <article class="detail-card">
+              <p class="eyebrow">Use cases</p>
+              <h3>This page can support more than single bookings.</h3>
+              <ul class="card-list">
+                <li>Private self-care events</li>
+                <li>Community wellness workshops</li>
+                <li>Retail activation experiences</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-brand">
+          <img src="./assets/logo.png" alt="Natural XScentrics logo" />
+          <p>Therapeutic service experiences designed to complement the product line.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./shop.html">Shop</a>
+          <a href="./gift-cards.html">Gift Cards</a>
+          <a href="./media.html">Media</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <a href="tel:8039406837">803-940-6837</a>
+          <a href="mailto:NaturalXscentrics@gmail.com">NaturalXscentrics@gmail.com</a>
+          <a href="./index.html">Back to home</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

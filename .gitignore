@@ -1,0 +1,21 @@
+# Local workspace folders not part of the Natural XScentrics website
+Fosmo Run 1/
+google_drive_icloud_workflow/
+icloud pics/
+.tools/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Office/autosave files
+~$*
+*.docx
+*.pptx
+*.xlsx
