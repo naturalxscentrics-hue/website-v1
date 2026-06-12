@@ -7,6 +7,7 @@ if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
+    topbar?.classList.toggle("is-menu-open", isOpen);
   });
 
   siteNav.querySelectorAll("a").forEach((link) => {
@@ -17,6 +18,7 @@ if (menuToggle && siteNav) {
     link.addEventListener("click", () => {
       siteNav.classList.remove("is-open");
       menuToggle.setAttribute("aria-expanded", "false");
+      topbar?.classList.remove("is-menu-open");
     });
   });
 }

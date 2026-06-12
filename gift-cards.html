@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=34" />
   </head>
   <body data-page="gift-cards">
     <div class="site-bg"></div>
@@ -45,21 +45,20 @@
             <p class="eyebrow">Gift cards</p>
             <h1>Make gifting easy for products, services, and self-care moments.</h1>
             <p class="page-intro">
-              A dedicated gift card page makes the brand more giftable year-round
-              and creates an easy entry point for new customers.
+              Send an eGift card instantly through Wix checkout, or request help
+              with a printable, physical, or custom gift-card option.
             </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="https://www.naturalxscentrics.com/gift-card" target="_blank" rel="noreferrer">Buy an eGift card</a>
+              <a class="button button-secondary" href="#gift-card-help">Request gift-card help</a>
+            </div>
           </div>
-          <div class="content-panel">
-            <p class="eyebrow">Why it matters</p>
-            <ul class="card-list">
-              <li>Works for birthdays, holidays, appreciation gifts, and wellness experiences</li>
-              <li>Can be used across services, bundles, digital guides, and merchandise</li>
-              <li>Simple to connect with Shopify, Wix, Square, or another checkout system</li>
-            </ul>
+          <div class="image-panel">
+            <img src="./assets/gift-card-customer-bag.jpg" alt="Natural XScentrics founder presenting a customer gift bag" />
           </div>
         </section>
 
-        <section class="section card-grid card-grid-four">
+        <section class="section card-grid card-grid-six">
           <article class="pricing-card">
             <span class="pricing-label tag-lime">$25</span>
             <h3>Starter Glow</h3>
@@ -71,21 +70,36 @@
             <p>Great for bundles, scrubs, and body butter combinations.</p>
           </article>
           <article class="pricing-card">
-            <span class="pricing-label tag-blue">$75</span>
-            <h3>Renew Gift</h3>
-            <p>Supports larger orders or service-plus-product gifting.</p>
+            <span class="pricing-label tag-blue">$100</span>
+            <h3>Radiate Gift</h3>
+            <p>Ideal for a full self-care gift or a premium product-and-service moment.</p>
           </article>
           <article class="pricing-card">
-            <span class="pricing-label tag-violet">$100</span>
-            <h3>Radiate Gift</h3>
-            <p>Ideal for premium gifting and special self-care moments.</p>
+            <span class="pricing-label tag-violet">$150</span>
+            <h3>Self-Care Celebration</h3>
+            <p>A generous choice for larger care orders, services, or special occasions.</p>
+          </article>
+          <article class="pricing-card">
+            <span class="pricing-label tag-gold">$200</span>
+            <h3>Whole Experience</h3>
+            <p>Best for premium gifting, bundles, services, and full self-care experiences.</p>
+          </article>
+          <article class="pricing-card">
+            <span class="pricing-label tag-green">Custom</span>
+            <h3>Choose Your Amount</h3>
+            <p>Use the Wix eGift card checkout to enter a custom amount that fits the moment.</p>
           </article>
         </section>
 
-        <section class="section schedule-layout">
-          <div class="form-panel">
-            <p class="eyebrow">Gift card request</p>
-            <h2>Prototype purchase flow</h2>
+        <section class="section gift-card-request-section" id="gift-card-help">
+          <div class="form-panel gift-card-request-panel">
+            <p class="eyebrow">Need help?</p>
+            <h2>Request a printable, physical, or custom gift card</h2>
+            <p class="page-intro">
+              Use this request path when you need a physical presentation,
+              printable option, custom amount, or help choosing the best gift
+              card for products, services, or a full self-care experience.
+            </p>
             <form data-demo-form>
               <div class="form-grid">
                 <label>
@@ -102,16 +116,27 @@
                     <option value="">Choose an amount</option>
                     <option>$25</option>
                     <option>$50</option>
-                    <option>$75</option>
                     <option>$100</option>
+                    <option>$150</option>
+                    <option>$200</option>
+                    <option>Custom amount</option>
                   </select>
                 </label>
                 <label>
                   Delivery type
                   <select name="delivery">
-                    <option>Email gift card</option>
+                    <option>Help with digital eGift card</option>
                     <option>Printable gift card</option>
                     <option>Physical gift card</option>
+                  </select>
+                </label>
+                <label class="full">
+                  Gift card use
+                  <select name="use">
+                    <option>Products, services, and self-care experiences</option>
+                    <option>Products only</option>
+                    <option>Services only</option>
+                    <option>Help me choose</option>
                   </select>
                 </label>
                 <label class="full">
@@ -120,22 +145,12 @@
                 </label>
               </div>
               <div class="cta-row">
-                <button class="button button-primary" type="submit">Continue to checkout</button>
+                <button class="button button-primary" type="submit">Send gift card request</button>
               </div>
             </form>
             <div class="success-message">
-              Gift card request captured in this prototype. Connect this form to Shopify, Wix, Square, or your live checkout for instant purchasing.
+              Thank you. Your gift card request has been captured. Natural XScentrics will follow up with delivery and payment details.
             </div>
-          </div>
-
-          <div class="content-panel">
-            <p class="eyebrow">Best live setup</p>
-            <h2>How to make this page sell smoothly</h2>
-            <ul class="card-list">
-              <li>Enable digital delivery for instant gifting</li>
-              <li>Allow cards to apply to both products and services</li>
-              <li>Feature gift cards on seasonal homepage banners and email campaigns</li>
-            </ul>
           </div>
         </section>
       </main>
@@ -158,6 +173,6 @@
         </div>
       </footer>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js?v=2"></script>
   </body>
 </html>
