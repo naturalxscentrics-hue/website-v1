@@ -81,6 +81,67 @@ textarea {
   padding: 1rem 0 3rem;
 }
 
+.promo-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(237, 98, 57, 0.3);
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(16, 10, 10, 0.92), rgba(28, 18, 18, 0.94)),
+    rgba(10, 10, 12, 0.92);
+  box-shadow:
+    0 20px 44px rgba(0, 0, 0, 0.34),
+    0 0 0 1px rgba(255, 244, 225, 0.04) inset;
+}
+
+.promo-banner-copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.promo-banner-eyebrow {
+  color: var(--gold);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.promo-banner strong {
+  color: var(--cream);
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.1rem, 2vw, 1.65rem);
+  line-height: 1.12;
+}
+
+.promo-banner p {
+  color: rgba(255, 244, 225, 0.82);
+}
+
+.promo-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.9rem 1.15rem;
+  border-radius: 999px;
+  color: #140d0d;
+  background: linear-gradient(90deg, var(--gold), #ffd28c);
+  font-weight: 900;
+  white-space: nowrap;
+  box-shadow: 0 14px 28px rgba(233, 170, 87, 0.22);
+}
+
+.promo-banner-cta:hover,
+.promo-banner-cta:focus-visible {
+  transform: translateY(-2px);
+  outline: none;
+}
+
 .topbar {
   position: sticky;
   top: 1rem;
@@ -1427,6 +1488,11 @@ textarea {
     width: min(calc(100% - 1rem), var(--container));
   }
 
+  .promo-banner {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
   .topbar {
     flex-wrap: wrap;
     top: 0.5rem;
@@ -1566,6 +1632,10 @@ textarea {
 
   .brand small {
     display: none;
+  }
+
+  .promo-banner-cta {
+    width: 100%;
   }
 
   .hero-actions,

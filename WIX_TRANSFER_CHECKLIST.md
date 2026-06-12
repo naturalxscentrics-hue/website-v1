@@ -92,6 +92,12 @@ Merchandise remains future-facing until products are ready.
 
 - 2026-06-12: Wix Editor opened for `naturalxscentrics.com`; no publish action
   was taken.
+- 2026-06-12: The Father's Day Flash Sale was reviewed, approved, saved, and
+  activated in Wix as a 20% automatic discount on the selected categories.
+- 2026-06-12: The approved Father's Day website banner copy was placed in Wix
+  and published: `Father's Day Flash Sale: 20% Off Select Categories` plus
+  `Celebrate him with purposeful natural care. Shop the Father's Day sale
+  before it ends.`
 - Home page draft checkpoint saved after replacing the old skincare-regimen
   paragraph with approved brand-direction copy: `Natural XScentrics helps you
   move from inconsistent to intentional care`, the approved purposeful natural
@@ -225,6 +231,9 @@ Merchandise remains future-facing until products are ready.
   card needs.
 - Homepage now includes a customer-facing gift-card callout that routes to the
   Gift Cards page.
+- The code-side current-site build now includes the same Father’s Day sale
+  announcement as a reusable promo banner so the local source package reflects
+  the live Wix promo state.
 - Digital Products display customer-facing guide / tracker / mini-class language.
   The free Glow Guide should use a Wix Form and automation, with no checkout
   required. The tracker exists as a hidden Wix digital product at the approved
