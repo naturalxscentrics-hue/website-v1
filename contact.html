@@ -14,6 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9S7PGG156S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9S7PGG156S");
+    </script>
     <link rel="stylesheet" href="./styles.css?v=25" />
   </head>
   <body data-page="contact">
@@ -63,7 +72,11 @@
           <div class="form-panel">
             <p class="eyebrow">Inquiry form</p>
             <h2>General, wholesale, media, or event inquiry</h2>
-            <form data-demo-form>
+            <form
+              data-demo-form
+              data-mailto-recipient="NaturalXscentrics@gmail.com"
+              data-mailto-subject="Website Inquiry - Contact Page"
+            >
               <div class="form-grid">
                 <label>
                   Name
@@ -98,7 +111,7 @@
               </div>
             </form>
             <div class="success-message">
-              Thank you. Your inquiry has been captured.
+              Your email app should open with this inquiry pre-filled. If it does not, email NaturalXscentrics@gmail.com directly.
             </div>
           </div>
 

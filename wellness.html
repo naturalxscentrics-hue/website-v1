@@ -14,6 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9S7PGG156S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9S7PGG156S");
+    </script>
     <link rel="stylesheet" href="./styles.css?v=29" />
   </head>
   <body data-page="wellness">
@@ -160,7 +169,12 @@
           </div>
 
           <div class="form-panel">
-            <form class="form-grid" data-demo-form>
+            <form
+              class="form-grid"
+              data-demo-form
+              data-mailto-recipient="NaturalXscentrics@gmail.com"
+              data-mailto-subject="Wellness Order Request - Website"
+            >
               <label>
                 Name
                 <input type="text" name="name" placeholder="Your name" required />
@@ -190,7 +204,7 @@
               <button class="button button-primary full" type="submit">Send wellness request</button>
             </form>
             <p class="success-message">
-              Thank you. Your wellness request has been captured. Natural XScentrics will follow up with availability, timing, and payment details.
+              Your email app should open with this wellness request pre-filled. If it does not, email NaturalXscentrics@gmail.com directly.
             </p>
           </div>
         </section>

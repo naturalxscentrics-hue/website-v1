@@ -1,5 +1,10 @@
 # Natural XScentrics Wix Transfer Checklist
 
+**Status:** Retired on 2026-06-24.
+
+Tiffany decided not to continue the Wix page-transfer path. Keep this file only
+as historical reference. Do not treat it as an active execution checklist.
+
 ## Verified Live Wix Routes
 
 - Shop: https://www.naturalxscentrics.com/shop
