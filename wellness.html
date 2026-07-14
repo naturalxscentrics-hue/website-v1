@@ -219,8 +219,15 @@
           </div>
 
           <div class="form-panel">
+            <p class="page-intro">
+              Submitting this form opens your email app with the wellness order details filled in.
+              If nothing opens, email NaturalXscentrics@gmail.com directly.
+            </p>
             <form
               class="form-grid"
+              action="mailto:NaturalXscentrics@gmail.com"
+              method="post"
+              enctype="text/plain"
               data-demo-form
               data-mailto-recipient="NaturalXscentrics@gmail.com"
               data-mailto-subject="Wellness Order Request - Website"
@@ -251,7 +258,7 @@
                 Order Details
                 <textarea name="details" placeholder="Tell us what you would like, quantities, flavors, or any event details."></textarea>
               </label>
-              <button class="button button-primary full" type="submit">Send wellness request</button>
+              <button class="button button-primary full" type="submit">Open email draft</button>
             </form>
             <p class="success-message">
               Your email app should open with this wellness request pre-filled. If it does not, email NaturalXscentrics@gmail.com directly.

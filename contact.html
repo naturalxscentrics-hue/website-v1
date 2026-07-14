@@ -122,7 +122,14 @@
           <div class="form-panel">
             <p class="eyebrow">Inquiry form</p>
             <h2>General, wholesale, media, or event inquiry</h2>
+            <p class="page-intro">
+              Submitting this form opens your email app with the inquiry details filled in.
+              If nothing opens, email NaturalXscentrics@gmail.com directly.
+            </p>
             <form
+              action="mailto:NaturalXscentrics@gmail.com"
+              method="post"
+              enctype="text/plain"
               data-demo-form
               data-mailto-recipient="NaturalXscentrics@gmail.com"
               data-mailto-subject="Website Inquiry - Contact Page"
@@ -157,7 +164,7 @@
                 </label>
               </div>
               <div class="cta-row">
-                <button class="button button-primary" type="submit">Send inquiry</button>
+                <button class="button button-primary" type="submit">Open email draft</button>
               </div>
             </form>
             <div class="success-message">
