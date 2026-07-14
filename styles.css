@@ -1165,6 +1165,11 @@ textarea {
   background: rgba(255, 255, 255, 0.04);
 }
 
+option {
+  color: #0b0b0b;
+  background: #ffffff;
+}
+
 textarea {
   min-height: 150px;
   resize: vertical;
