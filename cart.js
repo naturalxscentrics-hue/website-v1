@@ -5,7 +5,7 @@
     "https://www.naturalxscentrics.com/product-page/love-calls-1": ["Love Calls Body Butter", "/product/love-calls-body-butter/7YJVF62SERNWLZZYCPY26PW2"],
     "https://www.naturalxscentrics.com/product-page/love-calls": ["Love Calls Sugar Scrub", "/product/love-calls-sugar-scrub/R6ZV4IN3L764MS4M5IB5OJGD"],
     "https://www.naturalxscentrics.com/product-page/daydreaming": ["Daydreaming Body Butter", "/product/daydreaming-body-butter/YQRB6CUA364L46T4E3T6NLXV"],
-    "https://www.naturalxscentrics.com/product-page/daydreaming-1": ["Daydreaming Sugar Scrub", "/s/shop"],
+    "https://www.naturalxscentrics.com/product-page/daydreaming-1": ["Daydreaming Sugar Scrub", "/product/daydreaming-sugar-scrub/X4W7LUAHLHJBIC2PQA7VJ76S"],
     "https://www.naturalxscentrics.com/product-page/gentle-woods-1": ["Gentle Woods Body Butter", "/product/gentle-woods-body-butter/3EXSFAYCZGOHVX7ELUY7YNP7"],
     "https://www.naturalxscentrics.com/product-page/gentle-woods": ["Gentle Woods Sugar Scrub", "/product/gentle-woods-sugar-scrub/CAUMVC5UFQ5BUKO7ZJUNQD3Y"],
     "https://www.naturalxscentrics.com/product-page/sunkissed-glow-2": ["Sunkissed Glow Body Butter", "/product/sunkissed-glow-body-butter/WFXKFOC76WBSANHTOYGNJFV3"],
@@ -15,16 +15,18 @@
     "https://www.naturalxscentrics.com/product-page/sweet-melanin-1": ["Sweet Melanin Body Butter", "/product/sweet-melanin-body-butter/VSXVEEJPL3S7UUTX5CSNXYCC"],
     "https://www.naturalxscentrics.com/product-page/sweet-melanin": ["Sweet Melanin Sugar Scrub", "/product/sweet-melanin-sugar-scrub/I4MDYQ73GXM47IBFY7BIZKE3"],
     "https://www.naturalxscentrics.com/product-page/hair-oil": ["Hair Oil", "/product/hair-oil/8"],
-    "https://www.naturalxscentrics.com/product-page/face-oil-1": ["Face Oil", "/s/shop"],
+    "https://www.naturalxscentrics.com/product-page/face-oil-1": ["Face Oil", "/product/face-oil/5"],
     "https://www.naturalxscentrics.com/product-page/beard-oil-1": ["Beard Oil", "/product/beard-oil/6"],
     "https://www.naturalxscentrics.com/product-page/4-step-facial-routine": ["Four-Step Daily Facial Kit", "/product/4-step-facial-kit/2BV5FYPG72KM7M3UDNTOUDA7"],
-    "https://square.link/u/7cGZEug5": ["Oatmeal Soap", "/s/shop"],
+    "https://square.link/u/7cGZEug5": ["Oatmeal Soap", "/product/oatmeal-soap/9"],
     "https://square.link/u/fQ8yNQql": ["Turmeric Soap", "/product/turmeric-soap/BEZSOFXEJO6TLZB5GO6WSE2Q"],
+    "https://square.link/u/gTfVc1cw": ["30-Day Skin Care Tracker", "/product/30-day-skin-care-tracker/BEDPAEAWLLPQDE5CGYYUNGN5"],
+    "https://square.link/u/6KkxMLVq": ["The Whole Life Planner", "/product/the-whole-life-planner-printable-pdf/KDQZGBMZBZHIPQ7O5MB563XD"],
   };
   const suggestions = [
     ["Four-Step Daily Facial Kit", "/product/4-step-facial-kit/2BV5FYPG72KM7M3UDNTOUDA7", "./assets/shop-facial-care-edu.jpg"],
     ["Hair Oil", "/product/hair-oil/8", "./assets/shop-hair-oil-edu.jpg"],
-    ["Oatmeal Soap", "/s/shop", "./assets/soap-oatmeal.jpg"],
+    ["Oatmeal Soap", "/product/oatmeal-soap/9", "./assets/soap-oatmeal.jpg"],
     ["30-Day Skin Care Tracker", "/product/30-day-skin-care-tracker/BEDPAEAWLLPQDE5CGYYUNGN5", "./assets/logo.png"],
   ];
   const remember = (name) => { try { const old = JSON.parse(localStorage.getItem(RECENT_KEY)) || []; localStorage.setItem(RECENT_KEY, JSON.stringify([name, ...old.filter((item) => item !== name)].slice(0, 8))); } catch (error) {} };
