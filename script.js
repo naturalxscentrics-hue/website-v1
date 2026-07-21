@@ -19,38 +19,6 @@ const commerceLinkOverrides = {
     "https://app.squareup.com/gift/ML4VNNDQ66659/order",
   "https://www.naturalxscentrics.com/shop":
     "https://www.naturalxscentrics.com/shop",
-  "https://www.naturalxscentrics.com/product-page/love-calls-1":
-    "https://square.link/u/hCPox1jZ",
-  "https://www.naturalxscentrics.com/product-page/love-calls":
-    "https://square.link/u/DEYTTABn",
-  "https://www.naturalxscentrics.com/product-page/daydreaming":
-    "https://square.link/u/92uxtyW8",
-  "https://www.naturalxscentrics.com/product-page/daydreaming-1":
-    "https://square.link/u/m8iNTgCN",
-  "https://www.naturalxscentrics.com/product-page/gentle-woods-1":
-    "https://square.link/u/LOhZQl9y",
-  "https://www.naturalxscentrics.com/product-page/gentle-woods":
-    "https://square.link/u/bd80DRvT",
-  "https://www.naturalxscentrics.com/product-page/sunkissed-glow-2":
-    "https://square.link/u/Wv1GvW6z",
-  "https://www.naturalxscentrics.com/product-page/sunkissed-glow":
-    "https://square.link/u/SWncq7rk",
-  "https://www.naturalxscentrics.com/product-page/cool-running-1":
-    "https://square.link/u/KswaZPl5",
-  "https://www.naturalxscentrics.com/product-page/cool-running":
-    "https://square.link/u/vpzGo1ZY",
-  "https://www.naturalxscentrics.com/product-page/sweet-melanin-1":
-    "https://square.link/u/ztsf4eyn",
-  "https://www.naturalxscentrics.com/product-page/sweet-melanin":
-    "https://square.link/u/aQ9IINrV",
-  "https://www.naturalxscentrics.com/product-page/hair-oil":
-    "https://square.link/u/b0gGw9Qa",
-  "https://www.naturalxscentrics.com/product-page/face-oil-1":
-    "https://square.link/u/tHn6DWhn",
-  "https://www.naturalxscentrics.com/product-page/beard-oil-1":
-    "https://square.link/u/QH1Sagr2",
-  "https://www.naturalxscentrics.com/product-page/4-step-facial-routine":
-    "https://square.link/u/xjhcmvdM",
 };
 
 document.querySelectorAll("a[href]").forEach((link) => {
@@ -151,6 +119,10 @@ const escapeHtml = (value) =>
   });
 
 const shouldShowLeadFunnel = () => {
+  if (/\/(cart|you-may-also-like)\.html$/.test(window.location.pathname)) {
+    return false;
+  }
+
   try {
     return !sessionStorage.getItem(leadFunnelConfig.sessionKey) &&
       !localStorage.getItem(leadFunnelConfig.submissionKey);
