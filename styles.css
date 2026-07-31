@@ -336,6 +336,141 @@ textarea {
   outline: none;
 }
 
+.back-to-school-campaign {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid rgba(233, 170, 87, 0.28);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 90% 4%, rgba(16, 160, 218, 0.24), transparent 32%),
+    radial-gradient(circle at 8% 92%, rgba(139, 52, 154, 0.22), transparent 36%),
+    linear-gradient(145deg, rgba(14, 16, 25, 0.97), rgba(24, 16, 29, 0.97));
+  box-shadow: var(--shadow);
+}
+
+.back-to-school-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.back-to-school-heading h2 {
+  max-width: 16ch;
+}
+
+.back-to-school-lead {
+  max-width: 52rem;
+  margin-top: 1rem;
+  color: rgba(255, 244, 225, 0.82);
+  line-height: 1.72;
+}
+
+.back-to-school-offer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.8rem;
+  align-items: center;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(255, 244, 225, 0.16);
+  border-radius: var(--radius-lg);
+  color: #171016;
+  background: linear-gradient(120deg, #fff0a8, #ffc75d);
+}
+
+.back-to-school-offer strong {
+  grid-row: 1 / 3;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.back-to-school-offer span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.back-to-school-offer small {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.back-to-school-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.back-to-school-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.82fr) minmax(0, 1.18fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.back-to-school-art {
+  min-height: 100%;
+  padding: 0.7rem;
+  background: rgba(255, 249, 239, 0.06);
+}
+
+.back-to-school-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.back-to-school-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem;
+}
+
+.back-to-school-copy h3 {
+  margin-bottom: 0.7rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+}
+
+.back-to-school-copy > p:not(.back-to-school-label) {
+  color: rgba(255, 244, 225, 0.76);
+  line-height: 1.65;
+}
+
+.back-to-school-label {
+  margin-bottom: 0.55rem;
+  color: #8fe3cf;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.back-to-school-copy .button {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.back-to-school-note {
+  margin: 1rem 0 0;
+  color: rgba(255, 244, 225, 0.6);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
 .topbar {
   position: sticky;
   top: 1rem;
@@ -1680,6 +1815,15 @@ textarea {
     padding: 0.5rem 0.25rem;
     font-size: 0.82rem;
   }
+
+  .back-to-school-heading,
+  .back-to-school-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .back-to-school-heading h2 {
+    max-width: 20ch;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1800,6 +1944,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .back-to-school-card {
+    grid-template-columns: minmax(190px, 0.75fr) minmax(0, 1.25fr);
+  }
+
   .metric-band {
     gap: 0;
   }
@@ -1847,6 +1995,25 @@ textarea {
 
   .button {
     width: 100%;
+  }
+
+  .back-to-school-campaign {
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  .back-to-school-card {
+    grid-template-columns: 1fr;
+  }
+
+  .back-to-school-art img {
+    height: auto;
+    aspect-ratio: 392 / 508;
+    object-fit: contain;
+  }
+
+  .back-to-school-offer {
+    grid-template-columns: auto 1fr;
   }
 
   .hero-visual,
